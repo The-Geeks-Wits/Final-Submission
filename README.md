@@ -345,6 +345,8 @@ The testing process focused on:
 
 Jest was used as the testing framework for unit testing and mocking.
 
+The screenshot below shows the code coverage results generated after running the automated test suite using the testing framework. The report provides a summary of statement coverage, branch coverage, function coverage, and line coverage across the application. The high coverage percentages indicate that most parts of the system, including validation logic, error handling, conditional branches, and successful execution paths, were tested thoroughly. This demonstrates that the implemented unit tests effectively verified the reliability and correctness of the backend functionality.
+
 <img width="1130" height="428" alt="Screenshot 2026-05-22 162216" src="https://github.com/user-attachments/assets/8f7cbff2-6ea5-447f-b6d7-1971f3c296f6" />
 
 ---
