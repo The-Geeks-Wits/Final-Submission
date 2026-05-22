@@ -1,13 +1,16 @@
-# Final-Submission
-Documentaion of the project from sprint 1 to 4 and Final Document
-
+# THE WITS GEEKS FINAL DOCUMENTATION
+--
 Group Members:
 
-Makovha Thendo	    2585063
-Ozuko Mabongo	    2768437
-Musawenkosi Nzuza	2560516
-Tlhalefo Sebaeng	2575338
-Dikeledi Mokoatle	2769106
+-Makovha Thendo – 2585063 | 2585063@students.wits.ac.za
+
+-Ozuko Mabongo – 2768437 | 2768437@students.wits.ac.za
+
+-Musawenkosi Nzuza – 2560516 | 2560516@students.wits.ac.za
+
+-Tlhalefo Sebaeng – 2575338 | 2575338@students.wits.ac.za
+
+-Dikeledi Mokoatle – 2769106 | 2769106@students.wits.ac.za
 
 ## Content:
 1. Overview of The System
@@ -23,14 +26,14 @@ Dikeledi Mokoatle	2769106
 
 
 
-## Overview of The System
+## 1. Overview of The System
 
 SA Learnerships is a comprehensive online platform that connects South African work‑seekers with SETA‑accredited learnerships, internships, and apprenticeships. It is a platform that facilitates opportunity listings, applicant profile management, application tracking, notifications, and analytics reporting. The backend is built with Node.js, Express, and MongoDB, providing RESTful API endpoints for the frontend to interact with, and integrates Google OAuth for secure authentication. The frontend is built with HTML, CSS, and JavaScript, delivering a responsive, easy‑to‑navigate interface that dynamically populates standardized qualification, skill, institution, and location data aligned with the South African National Qualifications Framework.
 
 ---
 
 
-## System Architecture
+## 2. System Architecture
 
 The platform is built using a lightweight client‑server architecture, with a plain JavaScript frontend and a Node.js/Express backend, backed by MongoDB. The specific technology stacks are outlined below.
 
@@ -59,7 +62,7 @@ The system follows a client‑server architecture. The browser loads the static 
 ---
 
 
-## System Setup & Installation
+## 3. System Setup & Installation
 
 **Prerequisites**
 Node.js (v16.0.0 or higher)
@@ -77,7 +80,7 @@ A Google Cloud Console project with OAuth 2.0 credentials (for Google login)
 ---
 
 
-## Authentication & User Management
+## 4. Authentication & User Management
 
 The platform supports both manual registration and Google OAuth 2.0 for user authentication, using Passport.js and JSON Web Tokens. A signed JWT is stored in an httpOnly cookie, automatically sent with every API request to secure all protected routes.
 
@@ -146,7 +149,7 @@ The token is later placed in an httpOnly cookie by the route handler (e.g., in `
 ---
 
 
-## Core System Features
+## 5. Core System Features
 
 The SA Learnerships platform offers a full suite of tools for work‑seekers, training providers, and administrators. At its heart are opportunity listings, rich applicant profiles, a streamlined application workflow, real‑time notifications, and powerful analytics.
 
@@ -196,7 +199,7 @@ All these features are built on top of a shared **SA Data Integration** layer th
 ---
 
 
-## Technical Implementations
+## 6. Technical Implementations
 
 **Database Models**
 
@@ -293,7 +296,7 @@ All endpoints return JSON. Protected routes require a valid JWT cookie; admin‑
 
 ---
 
-## System Security
+## 7. System Security
 
 Our platform uses several layers of protection:
 
@@ -336,15 +339,26 @@ Our platform uses several layers of protection:
 **Password Requirements**
 - Manual passwords must be at least 8 characters with uppercase, lowercase, digits, and special symbols. They are never stored in plain text.
 ---
-## Testing & Code Coverage
+## 8. Testing & Code Coverage
+The primary goal of testing was to ensure that all controllers, services, and routes behave as expected with little to no bugs
+The testing process focused on:
+- Verifying correct functionality
+- Validating error handling 
+- Improving overall code coverage
+
+Jest was used as the testing framework for unit testing and mocking.
+
+The screenshot below shows the code coverage results generated after running the automated test suite using the testing framework. The report provides a summary of statement coverage, branch coverage, function coverage, and line coverage across the application. The high coverage percentages indicate that most parts of the system, including validation logic, error handling, conditional branches, and successful execution paths, were tested thoroughly. This demonstrates that the implemented unit tests effectively verified the reliability and correctness of the backend functionality.
+
+<img width="1130" height="428" alt="Screenshot 2026-05-22 162216" src="https://github.com/user-attachments/assets/8f7cbff2-6ea5-447f-b6d7-1971f3c296f6" />
 
 ---
-## Deployment
+## 9. Deployment
 //musa please specify where you deployed and the link to the site.
 
 ---
 
-## Known Issues
+## 10. Known Issues
 
 * **CSV export uses semicolons** – Some location names contain commas (like “Johannesburg, Gauteng”). To keep the spreadsheet from breaking, the download uses semicolons instead of commas. A few spreadsheet programs may ask you to confirm the separator when you open the file.
 * **Location dropdown is built into the code** – The list of provinces and cities is written directly into the profile editor. If a new city needs to be added, a developer must change the code and redeploy the application.
