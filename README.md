@@ -82,7 +82,7 @@ Open a terminal in the folder where you want to store the project and run:
 ```bash
 git clone https://github.com/The-Geeks-Wits/sa-learnerships.git
 cd sa-learnerships
-```
+```bash
 
 ### 2. Install Backend Dependencies
 Move into the backend folder and install all required packages:
