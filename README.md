@@ -337,6 +337,12 @@ Our platform uses several layers of protection:
 - Manual passwords must be at least 8 characters with uppercase, lowercase, digits, and special symbols. They are never stored in plain text.
 ---
 ## Testing & Code Coverage
+The primary goal of testing was to ensure that all controllers, services, and routes behave as expected with little to no bugs
+The testing process focused on:
+- Verifying correct functionality
+- Validating error handling 
+- Improving overall code coverage 
+Jest was used as the testing framework for unit testing and mocking.
 
 ---
 ## Deployment
