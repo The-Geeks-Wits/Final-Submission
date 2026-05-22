@@ -73,25 +73,22 @@ npm (comes with Node.js)
 
 A Google Cloud Console project with OAuth 2.0 credentials (for Google login)
 
-```markdown
+
 ## System Setup & Installation
 
 ### 1. Clone the Repository
 Open a terminal in the folder where you want to store the project and run:
 
-```bash
+
 git clone https://github.com/The-Geeks-Wits/sa-learnerships.git
 cd sa-learnerships
-```bash
 
 ### 2. Install Backend Dependencies
 Move into the backend folder and install all required packages:
 
-```bash
 cd backend
 npm install
 cd ..
-```
 
 ### 3. Configure the Environment Files
 
