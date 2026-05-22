@@ -138,11 +138,7 @@ node app.js
 The server will start on **http://localhost:3000**.
 
 ### 6. Run the Frontend
-The frontend is built with plain HTML, CSS, and JavaScript. You can serve it using any static server – for example, the **Live Server** extension in VS Code, or by running:
-
-```bash
-npx serve .
-```
+The frontend is built with plain HTML, CSS, and JavaScript. You can serve it using any static server – for example, the **Live Server** extension in VS Code
 from the project root. The frontend will be available at **http://localhost:5500**.
 
 ### 7. Access the Application
