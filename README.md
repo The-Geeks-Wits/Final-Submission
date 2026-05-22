@@ -13,7 +13,7 @@ Group Members:
 -Dikeledi Mokoatle – 2769106 | 2769106@students.wits.ac.za
 
 ## Content:
-1.Overview of The System
+1. Overview of The System
 2. System Architecture
 3. Setup & Installation
 4. Authentication & User Management
