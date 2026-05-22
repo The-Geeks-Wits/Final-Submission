@@ -73,7 +73,92 @@ npm (comes with Node.js)
 
 A Google Cloud Console project with OAuth 2.0 credentials (for Google login)
 
-//Musa please continue this section: show what the env file must look like inside for local testing and step by step on how to run locally here
+```markdown
+## System Setup & Installation
+
+### 1. Clone the Repository
+Open a terminal in the folder where you want to store the project and run:
+
+```bash
+git clone https://github.com/The-Geeks-Wits/sa-learnerships.git
+cd sa-learnerships
+```
+
+### 2. Install Backend Dependencies
+Move into the backend folder and install all required packages:
+
+```bash
+cd backend
+npm install
+cd ..
+```
+
+### 3. Configure the Environment Files
+
+#### Frontend Configuration
+Create a file named **`env.config.js`** in the **root** of the project with the following content:
+
+```javascript
+export const backendURL = () => {
+    const environment = 'dev';
+
+    if (environment === 'dev') {
+        return 'http://localhost:3000';
+    } 
+    else if (environment === 'prod') {
+        return 'https://sa-learnerships.onrender.com';
+    }
+};
+```
+> Make sure `environment = 'dev'` for local testing.
+
+#### Backend Environment Variables
+Create a file named **`.env`** inside the `backend` folder with these variables (replace placeholders with your own keys):
+
+```env
+SERVER_PORT=3000
+DB_URI=mongodb://127.0.0.1:27017/sa_learnerships
+CLIENT_URL=http://localhost:5500
+API_URL=http://localhost:3000
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+JWT_SECRET=your_jwt_secret
+```
+
+### 4. Start MongoDB
+Make sure MongoDB is installed and running locally on the default port (`27017`).
+
+### 5. Start the Backend Server
+Inside the `backend` folder, run:
+
+```bash
+node app.js
+```
+
+The server will start on **http://localhost:3000**.
+
+### 6. Run the Frontend
+The frontend is built with plain HTML, CSS, and JavaScript. You can serve it using any static server – for example, the **Live Server** extension in VS Code, or by running:
+
+```bash
+npx serve .
+```
+from the project root. The frontend will be available at **http://localhost:5500**.
+
+### 7. Access the Application
+Open your browser and visit:
+
+```
+http://localhost:5500
+```
+
+### Google OAuth Notes
+Ensure the following redirect URI is registered in your Google Cloud Console:
+
+```
+http://localhost:3000/api/users/google/callback
+```
+```
 
 
 
