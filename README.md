@@ -2,11 +2,15 @@
 --
 Group Members:
 
-Makovha Thendo	    2585063
-Ozuko Mabongo	    2768437
-Musawenkosi Nzuza	2560516
-Tlhalefo Sebaeng	2575338
-Dikeledi Mokoatle	2769106
+-Makovha Thendo – 2585063 | 2585063@students.wits.ac.za
+
+-Ozuko Mabongo – 2768437 | 2768437@students.wits.ac.za
+
+-Musawenkosi Nzuza – 2560516 | 2560516@students.wits.ac.za
+
+-Tlhalefo Sebaeng – 2575338 | 2575338@students.wits.ac.za
+
+-Dikeledi Mokoatle – 2769106 | 2769106@students.wits.ac.za
 
 ## Content:
 1. Overview of The System
