@@ -345,6 +345,8 @@ The testing process focused on:
 
 Jest was used as the testing framework for unit testing and mocking.
 
+<img width="1130" height="428" alt="Screenshot 2026-05-22 162216" src="https://github.com/user-attachments/assets/8f7cbff2-6ea5-447f-b6d7-1971f3c296f6" />
+
 ---
 ## Deployment
 //musa please specify where you deployed and the link to the site.
